@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elite Layouts - Web Development Specialists. Hosting, WordPress Management, Web Development, and Software Development Services.">
+    <meta name="keywords" content="web development, hosting, wordpress management, software development">
+    <meta name="author" content="Elite Layouts">
+    <meta property="og:title" content="Upgrade Now, Brag Later! - Elite Layouts">
+    <meta property="og:description" content="Web Development Specialists. Hosting and more!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elitelayouts.co.za">
+    <title>Upgrade Now, Brag Later! - Elite Layouts | Web Development & Hosting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gradient-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .gradient-secondary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .gradient-tertiary {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .hover-lift {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+
+        .card-shadow {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-shadow:hover {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+        }
+
+        .btn-primary {
+            transition: all 300ms ease;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+
+        .faq-icon {
+            transition: transform 300ms ease;
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-size: 32px;
+        }
+
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(17, 24, 39, 0.85) 0%, rgba(31, 41, 55, 0.85) 100%);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 12px;
+        }
+
+        .testimonial-card {
+            transition: all 300ms ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .star-rating {
+            color: #fbbf24;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 600ms ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-lg border-b border-gray-800">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+                    <i class="fas fa-rocket text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-bold text-white hidden sm:inline">Elite Layouts</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Home</a>
+                <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Features</a>
+                <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Benefits</a>
+                <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">About</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Testimonials</a>
+                <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">FAQ</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden p-2 rounded-lg hover:bg-gray-800 transition-colors duration-300" aria-label="Toggle menu">
+                <i class="fas fa-bars text-2xl text-white"></i>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden absolute top-full left-0 right-0 bg-gray-800 bg-opacity-95 backdrop-blur-lg border-b border-gray-700">
+                <div class="flex flex-col space-y-4 px-4 py-6">
+                    <a href="#home" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium py-2">Home</a>
+                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium py-2">Features</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium py-2">Benefits</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium py-2">About</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium py-2">Testimonials</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium py-2">FAQ</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium py-2">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen pt-24 pb-12 md:pb-24 flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=1600&h=900&fit=crop&q=80');"></div>
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in-up">
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
+                        <span class="text-gradient">Upgrade Now,</span>
+                        <br />
+                        <span class="text-white">Brag Later!</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed font-light">
+                        You're web development specialists. Hosting and more!
+                    </p>
+                    <p class="text-gray-400 text-lg mb-10 leading-relaxed max-w-md">
+                        Transform your online presence with our comprehensive web development and hosting solutions. We specialize in creating production-ready websites that deliver results.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://elitelayouts.co.za" class="btn-primary gradient-primary px-8 py-4 rounded-xl font-bold text-lg text-white text-center hover:shadow-2xl transition-all duration-300 inline-block">
+                            Get Started Now
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#features" class="px-8 py-4 rounded-xl font-bold text-lg text-white border-2 border-gray-500 hover:border-white text-center transition-all duration-300 hover:bg-gray-800">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hidden lg:block">
+                    <div class="relative">
+                        <div class="absolute -inset-4 gradient-primary rounded-2xl opacity-20 blur-2xl"></div>
+                        <div class="relative bg-gray-800 rounded-2xl p-8 border border-gray-700 card-shadow">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-gradient-primary rounded-xl p-6 text-center">
+                                    <i class="fas fa-server text-3xl mb-2"></i>
+                                    <p class="text-sm font-semibold">Enterprise Hosting</p>
+                                </div>
+                                <div class="bg-gradient-secondary rounded-xl p-6 text-center">
+                                    <i class="fas fa-globe text-3xl mb-2"></i>
+                                    <p class="text-sm font-semibold">Web Development</p>
+                                </div>
+                                <div class="bg-gradient-tertiary rounded-xl p-6 text-center">
+                                    <i class="fas fa-wordpress text-3xl mb-2"></i>
+                                    <p class="text-sm font-semibold">WordPress Mgmt</p>
+                                </div>
+                                <div class="bg-gradient-primary rounded-xl p-6 text-center">
+                                    <i class="fas fa-code text-3xl mb-2"></i>
+                                    <p class="text-sm font-semibold">Software Dev</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-gray-800 bg-opacity-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 text-white">
+                    Our <span class="text-gradient">Core Services</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Comprehensive solutions designed to elevate your digital presence and drive business growth
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1: Hosting -->
+                <div class="hover-lift card-shadow group bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-purple-500 transition-all duration-300">
+                    <div class="feature-icon bg-gradient-primary mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-server text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">Hosting</h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Secure, reliable, and scalable hosting solutions with 99.9% uptime guarantee and 24/7 expert support
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>SSL Certificates Included</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Auto Backups Daily</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>CDN Integration</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: WordPress Management -->
+                <div class="hover-lift card-shadow group bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-pink-500 transition-all duration-300">
+                    <div class="feature-icon bg-gradient-secondary mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-wordpress text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">WordPress Management</h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Complete WordPress maintenance, updates, security, and optimization for peak performance
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Theme Customization</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Plugin Management</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Security Monitoring</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Web Development -->
+                <div class="hover-lift card-shadow group bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-cyan-500 transition-all duration-300">
+                    <div class="feature-icon bg-gradient-tertiary mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-globe text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">Web Development</h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Custom-built, responsive websites using modern technologies and best practices for maximum impact
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Mobile Responsive</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>SEO Optimized</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Fast Loading</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 4: Software Development -->
+                <div class="hover-lift card-shadow group bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-purple-500 transition-all duration-300">
+                    <div class="feature-icon bg-gradient-primary mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-code text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">Software Development</h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Bespoke software solutions tailored to your specific business needs and scalable for growth
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Custom Solutions</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>API Integration</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Maintenance Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="py-24 bg-gray-900 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1600&h=900&fit=crop&q=80');"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 text-white">
+                    See How We <span class="text-gradient">Transform Businesses</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Watch our comprehensive overview of services and client success stories
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="video-container card-shadow rounded-2xl overflow-hidden border border-gray-700">
+                    <iframe 
+                        src="https://www.youtube.com/embed/PHL5xOU75i4?pp=ugUEEgJlbg%3D%3D" 
+                        title="Elite Layouts - Web Development & Hosting Services"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 bg-gray-800 bg-opacity-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 text-white">
+                    Why Choose <span class="text-gradient">Elite Layouts?</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Experience the difference that professional, dedicated service makes
+                </p>
+            </div>
+
+            <!-- Benefit 1: Secure Hosting -->
+            <div class="mb-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <h3 class="text-3xl md:text-4xl font-black mb-6 text-white">
+                        <span class="text-gradient">Secure Hosting</span> You Can Trust
+                    </h3>
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                        Your data is our priority. We implement military-grade encryption, regular security audits, and proactive threat monitoring to ensure your website and customer information remain protected 24/7.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-primary flex items-center justify-center mt-1">
+                                <i class="fas fa-shield-alt text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Advanced Security Protocols</h4>
+                                <p class="text-gray-400">Multi-layer protection against attacks and vulnerabilities</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-primary flex items-center justify-center mt-1">
+                                <i class="fas fa-lock text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">SSL Encryption</h4>
+                                <p class="text-gray-400">Industry-standard encryption for all data transfers</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-primary flex items-center justify-center mt-1">
+                                <i class="fas fa-sync-alt text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Automated Backups</h4>
+                                <p class="text-gray-400">Daily backups with instant recovery capabilities</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="https://elitelayouts.co.za" class="btn-primary gradient-primary px-8 py-4 rounded-xl font-bold text-lg text-white inline-block hover:shadow-2xl transition-all duration-300">
+                        Learn About Security
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="relative">
+                        <div class="absolute -inset-4 gradient-primary rounded-2xl opacity-20 blur-2xl"></div>
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop&q=80" alt="Secure Hosting" class="relative rounded-2xl card-shadow object-cover w-full h-96">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefit 2: Production Ready Websites -->
+            <div class="mb-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="relative">
+                        <div class="absolute -inset-4 gradient-secondary rounded-2xl opacity-20 blur-2xl"></div>
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop&q=80" alt="Production Ready" class="relative rounded-2xl card-shadow object-cover w-full h-96">
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-3xl md:text-4xl font-black mb-6 text-white">
+                        <span class="text-gradient">Production Ready</span> Websites
+                    </h3>
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                        Every website we create is optimized for performance, search engines, and user experience. Launch with confidence knowing your site is built to industry standards and best practices.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-secondary flex items-center justify-center mt-1">
+                                <i class="fas fa-tachometer-alt text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Lightning Fast Performance</h4>
+                                <p class="text-gray-400">Optimized for speed with average load times under 2 seconds</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-secondary flex items-center justify-center mt-1">
+                                <i class="fas fa-search text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">SEO Optimized</h4>
+                                <p class="text-gray-400">Built-in SEO best practices for better search rankings</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-secondary flex items-center justify-center mt-1">
+                                <i class="fas fa-mobile-alt text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Fully Responsive</h4>
+                                <p class="text-gray-400">Perfect display on all devices from mobile to desktop</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="https://elitelayouts.co.za" class="btn-primary gradient-secondary px-8 py-4 rounded-xl font-bold text-lg text-white inline-block hover:shadow-2xl transition-all duration-300">
+                        View Our Portfolio
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Benefit 3: Site Management -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <h3 class="text-3xl md:text-4xl font-black mb-6 text-white">
+                        Comprehensive <span class="text-gradient">Site Management</span>
+                    </h3>
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                        Focus on your business while we handle the technical details. Our proactive management ensures your website runs smoothly, stays updated, and performs optimally every single day.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-tertiary flex items-center justify-center mt-1">
+                                <i class="fas fa-cogs text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Regular Maintenance</h4>
+                                <p class="text-gray-400">Scheduled updates, patches, and performance tuning</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-tertiary flex items-center justify-center mt-1">
+                                <i class="fas fa-chart-line text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Performance Monitoring</h4>
+                                <p class="text-gray-400">24/7 monitoring with detailed analytics and reports</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-tertiary flex items-center justify-center mt-1">
+                                <i class="fas fa-headset text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Expert Support</h4>
+                                <p class="text-gray-400">Dedicated support team available whenever you need us</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="https://elitelayouts.co.za" class="btn-primary gradient-tertiary px-8 py-4 rounded-xl font-bold text-lg text-white inline-block hover:shadow-2xl transition-all duration-300">
+                        Explore Management Plans
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="relative">
+                        <div class="absolute -inset-4 gradient-tertiary rounded-2xl opacity-20 blur-2xl"></div>
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&q=80" alt="Site Management" class="relative rounded-2xl card-shadow object-cover w-full h-96">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-900 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-cover bg-center opacity-5" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&h=900&fit=crop&q=80');"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 text-white">
+                    About <span class="text-gradient">Elite Layouts</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Pioneering web development excellence since day one
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="relative">
+                        <div class="absolute -inset-4 gradient-primary rounded-2xl opacity-20 blur-2xl"></div>
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&q=80" alt="About Elite Layouts" class="relative rounded-2xl card-shadow object-cover w-full h-96">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-4">Our Journey</h3>
+                            <p class="text-gray-400 leading-relaxed text-lg">
+                                Founded in 2015, Elite Layouts emerged from a simple vision: to deliver exceptional web development and hosting services that transform businesses. What started as a small team of passionate developers has grown into a full-service digital agency trusted by hundreds of clients across South Africa and beyond. Our commitment to excellence, innovation, and customer satisfaction has been the driving force behind our success, enabling us to stay at the forefront of web technology and digital solutions.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-4">Our Mission</h3>
+                            <p class="text-gray-400 leading-relaxed text-lg">
+                                At Elite Layouts, we believe that every business deserves a powerful online presence. Our mission is to empower entrepreneurs and organizations with world-class web development, hosting, and digital services that drive growth and success. We're committed to delivering exceptional value through cutting-edge technology, strategic thinking, and unwavering dedication to our clients' success. We don't just build websites—we build lasting partnerships that help businesses thrive in the digital age.
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4 pt-4">
+                            <div class="bg-gray-800 rounded-xl p-4 text-center border border-gray-700">
+                                <div class="text-3xl font-black text-gradient mb-2">500+</div>
+                                <p class="text-sm text-gray-400">Projects Delivered</p>
+                            </div>
+                            <div class="bg-gray-800 rounded-xl p-4 text-center border border-gray-700">
+                                <div class="text-3xl font-black text-gradient mb-2">98%</div>
+                                <p class="text-sm text-gray-400">Client Satisfaction</p>
+                            </div>
+                            <div class="bg-gray-800 rounded-xl p-4 text-center border border-gray-700">
+                                <div class="text-3xl font-black text-gradient mb-2">9+</div>
+                                <p class="text-sm text-gray-400">Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gray-800 bg-opacity-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 text-white">
+                    What Our <span class="text-gradient">Clients Say</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Real success stories from businesses we've transformed
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-purple-500 transition-all duration-300 card-shadow">
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Sarah Mitchell</h4>
+                            <p class="text-gray-400 text-sm">CEO, Digital Marketing Agency</p>
+                        </div>
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "Elite Layouts completely transformed our online presence. Their hosting is incredibly reliable—we've had zero downtime in over a year. The team's attention to detail and proactive support is unmatched. Our website now loads in seconds and we've seen a 45% increase in conversions. Highly recommend!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-pink-500 transition-all duration-300 card-shadow">
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-white">James Rodriguez</h4>
+                            <p class="text-gray-400 text-sm">Founder, E-commerce Store</p>
+                        </div>
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "I was skeptical about outsourcing our WordPress management, but Elite Layouts proved me wrong. They handle everything—updates, security, optimization—and I can focus on growing my business. Their monthly reports show exactly what they're doing. Worth every penny!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-cyan-500 transition-all duration-300 card-shadow">
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Emma Thompson</h4>
+                            <p class="text-gray-400 text-sm">Marketing Director, Tech Startup</p>
+                        </div>
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "The custom web development Elite Layouts created for us is absolutely stunning and performs flawlessly. They understood our vision, provided excellent recommendations, and delivered ahead of schedule. The site is mobile-responsive, SEO-optimized, and our bounce rate dropped significantly!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-green-500 transition-all duration-300 card-shadow">
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Michael Chen</h4>
+                            <p class="text-gray-400 text-sm">Business Owner, Professional Services</p>
+                        </div>
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "Elite Layouts' software development team built a custom CRM system that perfectly fits our workflow. The integration was seamless, the documentation is thorough, and their ongoing support has been exceptional. This solution has saved us hours every week and improved our client relationships dramatically."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-gray-900 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 text-white">
+                    Frequently Asked <span class="text-gradient">Questions</span>
+                </h2>
+                <p class="text-xl text-gray-400">
+                    Everything you need to know about our services
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden hover:border-purple-500 transition-all duration-300">
+                    <button class="faq-question w-full px-6 py-5 flex items-center justify-between hover:bg-gray-750 transition-colors duration-300 text-left">
+                        <h3 class="text-lg font-bold text-white pr-4">What hosting options do you provide?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5 text-gray-300 border-t border-gray-700 pt-5">
+                        <p class="leading-relaxed">
+                            We offer a comprehensive range of hosting solutions tailored to different needs. Our offerings include shared hosting for small websites and startups, VPS hosting for growing businesses requiring more resources and control, dedicated servers for enterprise-level applications, and cloud hosting for maximum scalability. All plans include automatic backups, SSL certificates, 24/7 monitoring, and our expert support team. We also provide managed WordPress hosting specifically optimized for WordPress sites with automatic updates and security features built-in.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden hover:border-pink-500 transition-all duration-300">
+                    <button class="faq-question w-full px-6 py-5 flex items-center justify-between hover:bg-gray-750 transition-colors duration-300 text-left">
+                        <h3 class="text-lg font-bold text-white pr-4">How long does it take to build a custom website?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-pink-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5 text-gray-300 border-t border-gray-700 pt-5">
+                        <p class="leading-relaxed">
+                            The timeline for a custom website depends on complexity, features, and content availability. A simple 5-page business website typically takes 4-6 weeks from initial consultation to launch. More complex projects with e-commerce functionality, custom integrations, or advanced features may take 8-12 weeks. We follow an agile development process with regular check-ins and milestones to keep you informed. Rush projects are available upon request. During our initial consultation, we'll provide a detailed timeline and project plan specific to your needs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden hover:border-cyan-500 transition-all duration-300">
+                    <button class="faq-question w-full px-6 py-5 flex items-center justify-between hover:bg-gray-750 transition-colors duration-300 text-left">
+                        <h3 class="text-lg font-bold text-white pr-4">Do you provide ongoing support and maintenance?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-cyan-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5 text-gray-300 border-t border-gray-700 pt-5">
+                        <p class="leading-relaxed">
+                            Absolutely! We offer comprehensive maintenance and support packages designed to keep your website running smoothly. Our services include regular security updates, performance optimization, plugin and theme updates, backup management, monitoring and uptime checks, and priority technical support. We provide tiered support packages ranging from basic to premium, so you can choose the level of service that fits your needs. Our team is available 24/7 for emergencies, and we provide detailed monthly reports on your site's performance and activity.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden hover:border-green-500 transition-all duration-300">
+                    <button class="faq-question w-full px-6 py-5 flex items-center justify-between hover:bg-gray-750 transition-colors duration-300 text-left">
+                        <h3 class="text-lg font-bold text-white pr-4">What's your pricing structure and are there any hidden costs?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-green-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5 text-gray-300 border-t border-gray-700 pt-5">
+                        <p class="leading-relaxed">
+                            Our pricing is transparent with no hidden fees. We provide detailed quotes upfront that break down all costs. For hosting, we offer fixed monthly or annual rates depending on your plan. Custom development is typically quoted based on project scope, with options for fixed-price projects or hourly rates. We always provide a detailed proposal before starting work. Additional services like SSL certificates, domain registration, and email hosting are clearly itemized. We're happy to discuss payment plans and flexible options to fit your budget. Contact us for a personalized quote based on your specific requirements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-gray-400 mb-6">Still have questions?</p>
+                <a href="#contact" class="btn-primary gradient-primary px-8 py-4 rounded-xl font-bold text-lg text-white inline-block hover:shadow-2xl transition-all duration-300">
+                    Contact Our Team
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=1600&h=900&fit=crop&q=80');"></div>
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-gradient-primary rounded-3xl p-12 md:p-16 text-center card-shadow">
+                <h2 class="text-4xl md:text-5xl font-black mb-6 text-white">
+                    Ready to Upgrade Your Online Presence?
+                </h2>
+                <p class="text-xl text-gray-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Join hundreds of successful businesses that have transformed their digital presence with Elite Layouts. Let's build something amazing together.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://elitelayouts.co.za" class="btn-primary bg-white text-purple-600 px-10 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all duration-300 inline-block">
+                        Get Started Today
+                        <i class="fas fa-rocket ml-2"></i>
+                    </a>
+                    <a href="#contact" class="btn-primary border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-purple-600 transition-all duration-300 inline-block">
+                        Schedule a Consultation
+                        <i class="fas fa-calendar ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-gray-800 bg-opacity-50 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 text-white">
+                    Get In <span class="text-gradient">Touch</span>
+                </h2>
+                <p class="text-xl text-gray-400">
+                    Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Email</h3>
+                            <a href="mailto:info@elitelayouts.co.za" class="text-gray-400 hover:text-white transition-colors duration-300 text-lg">
+                                info@elitelayouts.co.za
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 rounded-lg bg-gradient-secondary flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Location</h3>
+                            <p class="text-gray-400 text-lg">
+                                South Africa
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 rounded-lg bg-gradient-tertiary flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-clock text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Response Time</h3>
+                            <p class="text-gray-400 text-lg">
+                                We typically respond within 24 hours
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pt-8 border-t border-gray-700">
+                        <h3 class="text-xl font-bold text-white mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 rounded-lg bg-gray-700 hover:bg-gradient-primary flex items-center justify-center transition-all duration-300 text-white hover:text-white" aria-label="Facebook">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-lg bg-gray-700 hover:bg-gradient-secondary flex items-center justify-center transition-all duration-300 text-white hover:text-white" aria-label="Twitter">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-lg bg-gray-700 hover:bg-gradient-tertiary flex items-center justify-center transition-all duration-300 text-white hover:text-white" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-lg bg-gray-700 hover:bg-gradient-primary flex items-center justify-center transition-all duration-300 text-white hover:text-white" aria-label="Instagram">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 card-shadow">
+                    <form class="space-y-6" id="contactForm">
+                        <div>
+                            <label for="name" class="block text-white font-bold mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors duration-300" required>
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-white font-bold mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors duration-300" required>
+                        </div>
+
+                        <div>
+                            <label for="subject" class="block text-white font-bold mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="How can we help?" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors duration-300" required>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-white font-bold mb-2">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your project..." rows="5" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors duration-300 resize-none" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary gradient-primary w-full px-6 py-4 rounded-lg font-bold text-lg text-white hover:shadow-2xl transition-all duration-300">
+                            Send Message
+                            <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-16 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+                            <i class="fas fa-rocket text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">Elite Layouts</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Transforming businesses through exceptional web development, hosting, and digital solutions since 2015.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-800 hover:bg-gradient-primary flex items-center justify-center transition-all duration-300 text-gray-400 hover:text-white" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-800 hover:bg-gradient-secondary flex items-center justify-center transition-all duration-300 text-gray-400 hover:text-white" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-800 hover:bg-gradient-tertiary flex items-center justify-center transition-all duration-300 text-gray-400 hover:text-white" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-800 hover:bg-gradient-primary flex items-center justify-center transition-all duration-300 text-gray-400 hover:text-white" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Web Hosting</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">WordPress Management</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Web Development</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Software Development</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-6">Resources</h3>
+                    <ul class="space-y-3">
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Get Support</a></li>
+                        <li><a href="https://elitelayouts.co.za" class="text-gray-400 hover:text-white transition-colors duration-300">Main Website</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    <div class="text-gray-400 text-center md:text-left">
+                        <p>
+                            &copy; <span id="year">2024</span> Elite Layouts. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-end text-sm">
+                        <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                        <span class="text-gray-700">•</span>
+                        <a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+                        <span class="text-gray-700">•</span>
+                        <a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update year in footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+
+            // Contact Form Handler
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = {
+                        name: document.getElementById('name').value,
+                        email: document.getElementById('email').value,
+                        subject: document.getElementById('subject').value,
+                        message: document.getElementById('message').value
+                    };
+                    
+                    // Here you would typically send the data to a server
+                    console.log('Form submitted:', formData);
+                    
+                    // Show success message
+                    const submitButton = contactForm.querySelector('button[type="submit"]');
+                    const originalText = submitButton.innerHTML;
+                    submitButton.innerHTML = '<i class="fas fa-check mr-2"></i>Message Sent!';
+                    submitButton.classList.add('bg-green-600');
+                    
+                    // Reset form
+                    contactForm.reset();
+                    
+                    // Restore button after 3 seconds
+                    setTimeout(() => {
+                        submitButton.innerHTML = originalText;
+                        submitButton.classList.remove('bg-green-600');
+                    }, 3000);
+                });
+            }
+
+            // Add scroll animation for elements
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-up');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.hover-lift').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
