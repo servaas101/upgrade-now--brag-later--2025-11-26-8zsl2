@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elite Layouts - Terms of Service. Web Development Specialists. Hosting, WordPress Management, Web Development, and Software Development Services.">
+    <meta name="keywords" content="web development, hosting, wordpress management, software development, terms of service">
+    <meta name="author" content="Elite Layouts">
+    <meta property="og:title" content="Terms of Service - Elite Layouts">
+    <meta property="og:description" content="Terms of Service for Elite Layouts Web Development & Hosting Services">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elitelayouts.co.za/terms">
+    <title>Terms of Service - Elite Layouts | Web Development & Hosting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gradient-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .gradient-secondary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .gradient-tertiary {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .hover-lift {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+
+        .card-shadow {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-shadow:hover {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+        }
+
+        .btn-primary {
+            transition: all 300ms ease;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-size: 32px;
+        }
+
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(17, 24, 39, 0.85) 0%, rgba(31, 41, 55, 0.85) 100%);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 600ms ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-lg border-b border-gray-800">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center justify-between w-full">
+                <a href="https://servaas101.github.io/upgrade-now--brag-later--2025-11-26-8zsl2" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+                        <i class="fas fa-rocket text-white text-xl"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white hidden sm:inline">Elite Layouts</span>
+                </a>
+                <a href="https://servaas101.github.io/upgrade-now--brag-later--2025-11-26-8zsl2" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium flex items-center space-x-2">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-24 pb-12 md:pb-24 flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=1600&h=900&fit=crop&q=80');"></div>
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="fade-in-up">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
+                    <span class="text-white">Terms of</span>
+                    <br />
+                    <span class="text-gradient">Service</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed font-light">
+                    Last updated: <span id="updateDate"></span>
+                </p>
+                <p class="text-gray-400 text-lg leading-relaxed max-w-2xl">
+                    Please read these terms of service carefully before using Elite Layouts' services. By accessing and using our website and services, you accept and agree to be bound by the terms and provision of this agreement.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms Content Section -->
+    <section class="py-24 bg-gray-800 bg-opacity-50 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Introduction -->
+            <div class="mb-16">
+                <h2 class="text-4xl font-black mb-6 text-white">
+                    <span class="text-gradient">1. Introduction</span>
+                </h2>
+                <div class="space-y-4 text-gray-300 leading-relaxed text-lg">
+                    <p>
+                        These Terms of Service ("Terms") govern your use of Elite Layouts' website, products, and services (collectively, the "Services"). Elite Layouts ("we," "us," "our," or "Company") provides web development, hosting, WordPress management, and software development services to individuals and businesses.
+                    </p>
+                    <p>
+                        By accessing and using our Services, you acknowledge that you have read, understood, and agree to be bound by all the terms and conditions contained herein. If you do not agree with any part of these Terms, you may not use our Services.
+                    </p>
+                    <p>
+                        We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting to our website. Your continued use of the Services following the posting of revised Terms means that you accept and agree to the changes.
+                    </p>
+                </div>
+            </div>
+
+            <!-- User Agreements -->
+            <div class="mb-16">
+                <h2 class="text-4xl font-black mb-6 text-white">
+                    <span class="text-gradient">2. User Agreements and Responsibilities</span>
+                </h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">2.1 Account Registration</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            To use certain features of our Services, you may be required to create an account. You agree to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate, current, and complete. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">2.2 User Responsibilities</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                            You agree to use our Services only for lawful purposes and in a way that does not infringe upon the rights of others or restrict their use and enjoyment of the Services. You specifically agree not to:
+                        </p>
+                        <ul class="space-y-3 text-gray-300 leading-relaxed text-lg ml-6">
+                            <li class="flex items-start space-x-3">
+                                <span class="text-purple-400 font-bold flex-shrink-0">•</span>
+                                <span>Harass, threaten, embarrass, or cause distress or discomfort to any individual</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-purple-400 font-bold flex-shrink-0">•</span>
+                                <span>Violate any laws or regulations in your jurisdiction</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-purple-400 font-bold flex-shrink-0">•</span>
+                                <span>Transmit obscene or offensive content</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-purple-400 font-bold flex-shrink-0">•</span>
+                                <span>Disrupt the normal flow of dialogue within our Services</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-purple-400 font-bold flex-shrink-0">•</span>
+                                <span>Attempt to gain unauthorized access to our systems</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">2.3 Content Ownership</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            You retain all rights to any content you provide to us. By providing content, you grant Elite Layouts a non-exclusive, royalty-free, perpetual, and worldwide license to use, copy, modify, and display such content in connection with providing our Services. You represent and warrant that you own or have the necessary rights to the content you provide and that such content does not violate any third-party rights.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Acceptable Use -->
+            <div class="mb-16">
+                <h2 class="text-4xl font-black mb-6 text-white">
+                    <span class="text-gradient">3. Acceptable Use Policy</span>
+                </h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">3.1 Prohibited Activities</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                            You agree not to engage in any of the following prohibited activities:
+                        </p>
+                        <ul class="space-y-3 text-gray-300 leading-relaxed text-lg ml-6">
+                            <li class="flex items-start space-x-3">
+                                <span class="text-pink-400 font-bold flex-shrink-0">•</span>
+                                <span>Using the Services to transmit any unlawful, threatening, abusive, defamatory, obscene, or otherwise objectionable material</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-pink-400 font-bold flex-shrink-0">•</span>
+                                <span>Disrupting the normal flow of dialogue or otherwise acting in a manner that negatively affects other users' ability to use the Services</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-pink-400 font-bold flex-shrink-0">•</span>
+                                <span>Attempting to gain unauthorized access to our systems, networks, or services</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-pink-400 font-bold flex-shrink-0">•</span>
+                                <span>Engaging in any form of automated data collection or scraping</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-pink-400 font-bold flex-shrink-0">•</span>
+                                <span>Using the Services for spam, phishing, or other malicious purposes</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-pink-400 font-bold flex-shrink-0">•</span>
+                                <span>Violating any applicable laws or regulations</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">3.2 Enforcement</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            We reserve the right to investigate and take appropriate action against anyone who, in our sole discretion, violates any provision of these Terms or any applicable law or regulation. This may include removing or disabling content, suspending or terminating your account, and cooperating with law enforcement authorities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services and Fees -->
+            <div class="mb-16">
+                <h2 class="text-4xl font-black mb-6 text-white">
+                    <span class="text-gradient">4. Services and Fees</span>
+                </h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">4.1 Service Description</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            Elite Layouts provides various services including but not limited to web hosting, WordPress management, web development, and software development. The specific services and features are described on our website and in any service agreements you enter into with us.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">4.2 Fees and Payment</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                            You agree to pay all fees and charges that you incur, including any applicable taxes. Fees are exclusive of applicable taxes unless otherwise stated. We reserve the right to change our fees upon 30 days' written notice to you. Your continued use of our Services following such notice constitutes your acceptance of the new fees.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">4.3 Refunds</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            Refund policies are determined on a case-by-case basis and are subject to the specific terms of your service agreement. Generally, fees paid for services rendered are non-refundable unless otherwise agreed to in writing. We may offer refunds at our sole discretion for services that fail to meet the standards described in our service agreements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Limitation of Liability -->
+            <div class="mb-16">
+                <h2 class="text-4xl font-black mb-6 text-white">
+                    <span class="text-gradient">5. Limitation of Liability and Disclaimers</span>
+                </h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">5.1 Disclaimer of Warranties</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            Our Services are provided on an "as is" and "as available" basis. We make no warranties, expressed or implied, regarding the Services, including but not limited to warranties of merchantability, fitness for a particular purpose, non-infringement, or title. We do not warrant that the Services will be uninterrupted, error-free, or free from harmful components.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">5.2 Limitation of Liability</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg mb-4">
+                            To the fullest extent permitted by law, Elite Layouts shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            In no event shall our total liability to you exceed the amount you have paid to us in the 12 months preceding the claim. Some jurisdictions do not allow the exclusion of certain warranties or the limitation of liability, so some of the above limitations may not apply to you.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">5.3 Assumption of Risk</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            You assume all risk associated with your use of the Services and the internet generally. You assume responsibility and risk for any harm to your computer system or loss of data that results from your use of the Services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intellectual Property -->
+            <div class="mb-16">
+                <h2 class="text-4xl font-black mb-6 text-white">
+                    <span class="text-gradient">6. Intellectual Property Rights</span>
+                </h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">6.1 Our Intellectual Property</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            All content on our website and Services, including but not limited to text, graphics, logos, images, audio clips, digital downloads, data compilations, and software, is the property of Elite Layouts or its content suppliers and is protected by international copyright laws. The compilation of all content on our website is the exclusive property of Elite Layouts and is protected by international copyright laws.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">6.2 License Grant</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            We grant you a limited, non-exclusive, non-transferable license to access and use our Services for your personal or business purposes, subject to the restrictions set forth in these Terms. You may not reproduce, modify, distribute, transmit, display, perform, or publish any content from our Services without our prior written consent.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">6.3 Third-Party Rights</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            Our Services may contain links to third-party websites and content. We are not responsible for the content, accuracy, or practices of these third-party sites. Your access and use of third-party websites is at your own risk and subject to their terms and conditions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Indemnification -->
+            <div class="mb-16">
+                <h2 class="text-4xl font-black mb-6 text-white">
+                    <span class="text-gradient">7. Indemnification</span>
+                </h2>
+                <div class="text-gray-300 leading-relaxed text-lg space-y-4">
+                    <p>
+                        You agree to indemnify, defend, and hold harmless Elite Layouts, its officers, directors, employees, agents, and successors from and against any and all claims, damages, losses, costs, and expenses (including reasonable attorneys' fees) arising from or related to:
+                    </p>
+                    <ul class="space-y-3 ml-6">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-cyan-400 font-bold flex-shrink-0">•</span>
+                            <span>Your use of the Services or any content provided by you</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-cyan-400 font-bold flex-shrink-0">•</span>
+                            <span>Your violation of these Terms or any applicable law or regulation</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-cyan-400 font-bold flex-shrink-0">•</span>
+                            <span>Your infringement of any third-party intellectual property rights</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-cyan-400 font-bold flex-shrink-0">•</span>
+                            <span>Any harm caused by content you provide or actions you take through our Services</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Termination -->
+            <div class="mb-16">
+                <h2 class="text-4xl font-black mb-6 text-white">
+                    <span class="text-gradient">8. Termination</span>
+                </h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">8.1 Termination by You</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            You may terminate your account and use of our Services at any time by providing written notice to us. Upon termination, we will cease providing Services to you, though we may retain your data for a period of time as required by law or our backup procedures.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">8.2 Termination by Elite Layouts</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            We may terminate or suspend your account and access to our Services at any time, with or without cause, and with or without notice. Cause for termination includes, but is not limited to: violation of these Terms, violation of any law or regulation, non-payment of fees, or any other conduct we deem inappropriate or harmful.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">8.3 Survival</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            The provisions of these Terms that by their nature should survive termination, including but not limited to limitation of liability, indemnification, and intellectual property rights, shall survive any termination of your account or these Terms.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Governing Law -->
+            <div class="mb-16">
+                <h2 class="text-4xl font-black mb-6 text-white">
+                    <span class="text-gradient">9. Governing Law and Jurisdiction</span>
+                </h2>
+                <div class="text-gray-300 leading-relaxed text-lg space-y-4">
+                    <p>
+                        These Terms and all matters arising out of or related to these Terms and our Services shall be governed by and construed in accordance with the laws of South Africa, without regard to its conflict of law principles. You agree to submit to the exclusive jurisdiction of the courts located in South Africa for the resolution of any disputes.
+                    </p>
+                    <p>
+                        If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall continue in full force and effect. The failure of either party to enforce any right or provision shall not constitute a waiver of such right or provision.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="mb-16">
+                <h2 class="text-4xl font-black mb-6 text-white">
+                    <span class="text-gradient">10. Contact Information</span>
+                </h2>
+                <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+                    <p class="text-gray-300 leading-relaxed text-lg mb-6">
+                        If you have any questions about these Terms of Service or our Services, please contact us at:
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">Email</h3>
+                                <a href="mailto:info@elitelayouts.co.za" class="text-gray-400 hover:text-white transition-colors duration-300 text-lg">
+                                    info@elitelayouts.co.za
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-lg bg-gradient-secondary flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">Location</h3>
+                                <p class="text-gray-400 text-lg">
+                                    South Africa
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-lg bg-gradient-tertiary flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-globe text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">Website</h3>
+                                <a href="https://elitelayouts.co.za" class="text-gray-400 hover:text-white transition-colors duration-300 text-lg">
+                                    https://elitelayouts.co.za
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Notice -->
+            <div class="bg-purple-900 bg-opacity-30 rounded-2xl p-8 border border-purple-500 border-opacity-30">
+                <h3 class="text-2xl font-bold text-white mb-4">Important Notice</h3>
+                <p class="text-gray-300 leading-relaxed text-lg">
+                    These Terms of Service constitute the entire agreement between you and Elite Layouts regarding the use of our Services and supersede all prior agreements and understandings. If you do not agree with any part of these Terms, please do not use our Services. Your continued use of our Services constitutes your acceptance of these Terms. We reserve the right to update these Terms at any time, and your use of the Services following such updates constitutes your acceptance of the revised Terms.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-16 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+                            <i class="fas fa-rocket text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">Elite Layouts</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Transforming businesses through exceptional web development, hosting, and digital solutions since 2015.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-800 hover:bg-gradient-primary flex items-center justify-center transition-all duration-300 text-gray-400 hover:text-white" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-800 hover:bg-gradient-secondary flex items-center justify-center transition-all duration-300 text-gray-400 hover:text-white" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-800 hover:bg-gradient-tertiary flex items-center justify-center transition-all duration-300 text-gray-400 hover:text-white" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-800 hover:bg-gradient-primary flex items-center justify-center transition-all duration-300 text-gray-400 hover:text-white" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://servaas101.github.io/upgrade-now--brag-later--2025-11-26-8zsl2" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="https://servaas101.github.io/upgrade-now--brag-later--2025-11-26-8zsl2#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="https://servaas101.github.io/upgrade-now--brag-later--2025-11-26-8zsl2#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="https://servaas101.github.io/upgrade-now--brag-later--2025-11-26-8zsl2#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="https://servaas101.github.io/upgrade-now--brag-later--2025-11-26-8zsl2#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="https://servaas101.github.io/upgrade-now--brag-later--2025-11-26-8zsl2#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://servaas101.github.io/upgrade-now--brag-later--2025-11-26-8zsl2#features" class="text-gray-400 hover:text-white transition-colors duration-300">Web Hosting</a></li>
+                        <li><a href="https://servaas101.github.io/upgrade-now--brag-later--2025-11-26-8zsl2#features" class="text-gray-400 hover:text-white transition-colors duration-300">WordPress Management</a></li>
+                        <li><a href="https://servaas101.github.io/upgrade-now--brag-later--2025-11-26-8zsl2#features" class="text-gray-400 hover:text-white transition-colors duration-300">Web Development</a></li>
+                        <li><a href="https://servaas101.github.io/upgrade-now--brag-later--2025-11-26-8zsl2#features" class="text-gray-400 hover:text-white transition-colors duration-300">Software Development</a></li>
+                        <li><a href="https://servaas101.github.io/upgrade-now--brag-later--2025-11-26-8zsl2#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-6">Resources</h3>
+                    <ul class="space-y-3">
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://servaas101.github.io/upgrade-now--brag-later--2025-11-26-8zsl2#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Get Support</a></li>
+                        <li><a href="https://elitelayouts.co.za" class="text-gray-400 hover:text-white transition-colors duration-300">Main Website</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    <div class="text-gray-400 text-center md:text-left">
+                        <p>
+                            &copy; <span id="year">2024</span> Elite Layouts. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-end text-sm">
+                        <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                        <span class="text-gray-700">•</span>
+                        <a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+                        <span class="text-gray-700">•</span>
+                        <a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update year in footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Set last updated date
+            const lastUpdated = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('updateDate').textContent = lastUpdated.toLocaleDateString('en-US', options);
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
